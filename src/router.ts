@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import { createProduct, getCategories, getProducts, getProductById, updateProduct, updateAvailability, deleteProduct } from './handlers/product';
 import {body, param} from 'express-validator'
-import  {handleInputErrors} from '../src/middleware/index';
+import  {handleInputErrors} from './middleware/index';
 
 const router = Router();
 
